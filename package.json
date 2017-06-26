@@ -1,11 +1,15 @@
 {
   "name": "demoapp8",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "main": "main.js",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href /Users/carlosrojaso/Documents/Playground/Angular/demoapp8/dist/npm",
+    "electron": "electron .",
+    "packaging": "packaging/packaging.sh",
+    "signin": "packaging/signin.sh",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -21,6 +25,7 @@
     "@angular/platform-browser-dynamic": "^2.4.0",
     "@angular/router": "^3.4.0",
     "core-js": "^2.4.1",
+    "dotenv": "^4.0.0",
     "rxjs": "^5.1.0",
     "zone.js": "^0.7.6"
   },
@@ -35,9 +40,9 @@
     "karma": "~1.4.1",
     "karma-chrome-launcher": "~2.0.0",
     "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "karma-coverage-istanbul-reporter": "^0.2.0",
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
